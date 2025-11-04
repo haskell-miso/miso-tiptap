@@ -22,20 +22,14 @@ type Action = ()
 -----------------------------------------------------------------------------
 editor :: Component parent Model Action
 editor = (component () noop viewModel)
-  { scripts = [ Src "https://cdn.tailwindcss.com?plugins=typography" ]
+  { scripts = [ Src "https://cdn.tailwindcss.com?plugins=typography"
+              , Module bootstrapEditor
+              ]
   }
 -----------------------------------------------------------------------------
 viewModel :: Model -> View Model Action
-viewModel () = H.div_
-  []
-  [ H.div_
-    [ P.class_ "element" ]
-    [ ]
-  , H.script_
-    [ type_ "module" ] 
-    bootstrapEditor
-  ]
-
+viewModel () = H.div_ [ P.class_ "element" ] []
+-----------------------------------------------------------------------------
 bootstrapEditor :: MisoString
 bootstrapEditor = 
   """
