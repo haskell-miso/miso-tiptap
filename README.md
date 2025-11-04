@@ -1,7 +1,11 @@
 🚀 miso-tiptap
 ====================
 
-A [miso](https://github.com/dmjio/miso) `Component` for [TipTap](https://tiptap.dev/).
+A [miso](https://github.com/dmjio/miso) `Component` for [TipTap](https://tiptap.dev/). See [live here](https://tiptap.haskell-miso.org).
+
+<a href="tiptap.haskell-miso.org">
+  <img width="1015" height="731" alt="image" src="https://github.com/user-attachments/assets/ccc62a48-e9c6-4484-b7a5-ffd8d5dff5ab" />
+</a>
 
 This sample `Component` showcases [tailwind](https://tailwindcss.com/) integration as well.
 
