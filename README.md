@@ -23,13 +23,13 @@ foreign export javascript "hs_start" main :: IO ()
 #endif
 -----------------------------------------------------------------------------
 main :: IO ()
-main = run $ startApp app
+main = run $ startApp editor
 -----------------------------------------------------------------------------
 type Model = ()
 type Action = ()
 -----------------------------------------------------------------------------
-app :: App Model Action
-app = (component () noop viewModel)
+editor :: Component parent Model Action
+editor = (component () noop viewModel)
   { scripts = [ Src "https://cdn.tailwindcss.com?plugins=typography" ]
   }
 -----------------------------------------------------------------------------
