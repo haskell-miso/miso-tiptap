@@ -15,7 +15,7 @@ foreign export javascript "hs_start" main :: IO ()
 #endif
 -----------------------------------------------------------------------------
 main :: IO ()
-main = startApp editor
+main = startApp defaultEvents editor
 -----------------------------------------------------------------------------
 type Model = ()
 type Action = ()
