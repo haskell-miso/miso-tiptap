@@ -15,7 +15,7 @@ foreign export javascript "hs_start" main :: IO ()
 #endif
 -----------------------------------------------------------------------------
 main :: IO ()
-main = run $ startApp editor
+main = startApp editor
 -----------------------------------------------------------------------------
 type Model = ()
 type Action = ()
